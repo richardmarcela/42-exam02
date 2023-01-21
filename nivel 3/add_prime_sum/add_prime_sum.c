@@ -77,7 +77,7 @@ int main(int argc, char **argv)
         }
         ft_putnum(res);
     }
-    else
+}
         write(1, "0", 1);
     write(1, "\n", 1);
 }
