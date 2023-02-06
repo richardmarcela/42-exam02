@@ -5,20 +5,6 @@ int main(int argc, char **argv)
 {
     if (argc == 2)
     {
-<<<<<<< HEAD
-        int i = 1;
-        int number = atoi(argv[1]);
-        if (number == 1)
-            printf("1");
-        while (number >= ++i)
-        {
-            if (number % i == 0)
-            {
-                printf("%d", i);
-                if (number == i)
-                    break ;
-                printf("*");
-=======
         int number = atoi(argv[1]);
         int i = 1;
 
@@ -52,8 +38,6 @@ int main(int argc, char **argv)
                 
                 //se não, printo o sinal de *
                 printf("*");
-
->>>>>>> 1f839c8f2698b86260ae6a2e32df31fa5aaf9f2d
                 number /= i;
                 i = 1;
             }
