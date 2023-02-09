@@ -25,7 +25,8 @@ int main(int argc, char **argv)
             else
             {
                 //escrevo o resto da string
-                while (argv[1][i] && !is_space(argv[1][i]) && write(1, &argv[1][i++], 1));
+                while (argv[1][i] && !is_space(argv[1][i]))
+                    write(1, &argv[1][i++], 1);
                 write(1, " ", 1);
             }
         }
@@ -33,9 +34,7 @@ int main(int argc, char **argv)
     i = 0; //retorno o contador a primeira palavra e a escrevo
     while (is_space(argv[1][i]))
         i++;
-    while (i <= first_word_len + 1)
-    {
+    while (first_word_len--)
         write(1, &argv[1][i++], 1);
-        first_word_len--;
-    }
+    write(1, "\n", 1);
 }
