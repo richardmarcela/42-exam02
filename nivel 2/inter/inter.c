@@ -1,18 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   inter.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mrichard <mrichard@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/26 15:13:40 by mrichard          #+#    #+#             */
-/*   Updated: 2022/12/26 16:34:11 by mrichard         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 
-inline static int iter(char *str, char c, int len)
+int iter(char *str, char c, int len)
 {
 	int i = 0;
 	while (str[i] && (i < len || len == -1))

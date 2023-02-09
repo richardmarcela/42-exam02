@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include <stdlib.h>
-
 
 int	*ft_range(int start, int end)
 {
@@ -23,7 +21,7 @@ int	*ft_range(int start, int end)
     return (array);
 }
 
-
+/* #include <stdio.h>
 int main(void)
 {
     int *str = ft_range(1, 3);
@@ -31,4 +29,4 @@ int main(void)
     printf("%d\n", str[1]);
     printf("%d\n", str[2]);
     printf("%d\n", str[3]);
-}
+} */

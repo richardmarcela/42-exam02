@@ -1,27 +1,34 @@
-#include <stddef.h>
-#include <stdio.h>
+#include <string.h>
+
+char *find(const char *s, const char c)
+{
+    while (*s)
+    {
+        if (*s == c)
+            return ((char *)s);
+        s++;
+    }
+    return (0);
+}
 
 size_t	ft_strspn(const char *s, const char *accept)
 {
-    size_t i;
-    size_t flag;
-    for (i = 0; s[i]; i++)
+    size_t i = 0;
+
+    while (s[i])
     {
-        flag = 0;
-        for (size_t j = 0; accept[j]; j++)
-        {
-            if (s[i] == accept[j])
-                flag = 1;
-        }
-        if (!flag)
-            return (i);
+        if (!find(accept, s[i]))
+            break;
+        i++;
     }
     return (i);
 }
 
-/* int main()
+/* #include <stdio.h>
+int main()
 {
     const char *s = "barcela";
-    const char *accept = "abc";
-    printf("%zu", ft_strspn(s, accept));
+    const char *accept = "barcela";
+    printf("%zu\n", ft_strspn(s, accept));
+    printf("%zu", strspn(s, accept));
 } */

@@ -23,7 +23,7 @@ int main(int argc, char **argv)
                 write(1, &argv[1][i], 1);
         //percorro a segunda string
         while (argv[2][++j])
-            //testo se a letra atual ja foi vista antes na string atual, do inicio até a posição atual, e na anterior inteira
+            //testo se a letra atual não foi vista antes na string atual, desde o inicio, e na anterior inteira
             if (!seen_before(argv[1], i, argv[2][j]) && !seen_before(argv[2], j, argv[2][j]))
                 write(1, &argv[2][j], 1);
     }

@@ -1,5 +1,3 @@
-//#include <stdio.h>
-
 int ft_strlen(char *str)
 {
     int i = 0;
@@ -23,9 +21,10 @@ char *ft_strrev(char *str)
 	return (str);
 }
 
-/* int main(void)
+/* #include <stdio.h>
+int main(void)
 {
-	char str[] = "842521984512";
+	char str[] = "teste";
 	ft_strrev(str);
     printf("%s\n", str);
 } */

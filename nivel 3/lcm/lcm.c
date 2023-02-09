@@ -1,4 +1,3 @@
-/* #include <stdio.h> */
 
 unsigned int    lcm(unsigned int a, unsigned int b)
 {
@@ -15,7 +14,8 @@ unsigned int    lcm(unsigned int a, unsigned int b)
     return (0);
 }
 
-/* int main()
+/* #include <stdio.h>
+int main()
 {
     printf("%d\n", lcm(10, 20));
 } */

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   add_prime_sum.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mrichard <mrichard@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/20 19:33:49 by mrichard          #+#    #+#             */
-/*   Updated: 2022/12/20 21:25:02 by mrichard         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 #include <stdbool.h>
 
@@ -25,7 +13,7 @@ bool ft_isprime(unsigned int n)
 {
     if (n == 0 || n == 1)
         return (false);
-    int i = 2;
+    unsigned int i = 2;
     while (i <= n / 2)
     {
         if (n % i == 0)
@@ -35,7 +23,7 @@ bool ft_isprime(unsigned int n)
     return (true);
 }
 
-/*
+/* same as
 bool ft_isprime(unsigned int n, unsigned int i)
 {
     if (n == 0 || n == 1)
@@ -77,7 +65,6 @@ int main(int argc, char **argv)
         }
         ft_putnum(res);
     }
-}
-        write(1, "0", 1);
+    write(1, "0", 1);
     write(1, "\n", 1);
 }

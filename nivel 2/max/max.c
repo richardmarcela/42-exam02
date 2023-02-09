@@ -1,17 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   max.c                                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mrichard <mrichard@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/20 18:32:51 by mrichard          #+#    #+#             */
-/*   Updated: 2022/12/20 19:31:22 by mrichard         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include <stdio.h>
-
 int max(int *tab, unsigned int len)
 {
     int max;
@@ -30,7 +16,8 @@ int max(int *tab, unsigned int len)
     return (max);
 }
 
-/* int main(void)
+/* #include <stdio.h>
+int main(void)
 {
     int tab[] = {-13, -5, -35, -23};
     unsigned int len = 4;
