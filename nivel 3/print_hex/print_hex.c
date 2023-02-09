@@ -15,11 +15,8 @@ int main(int argc, char **argv)
     {
         int n = 0;
         int i = -1;
-        while (argv[1][i])
-        {
-            n *= 10;
-            n = n + argv[1][i] - '0';
-        }
+        while (argv[1][++i])
+            n = (n * 10) + argv[1][i] - '0';
         print_hex(n);
     }
     write(1, "\n", 1);

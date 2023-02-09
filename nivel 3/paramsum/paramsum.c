@@ -11,6 +11,7 @@ void putnbr(int n)
 
 int main(int argc, char **argv)
 {
+    (void)argv;
     putnbr(argc - 1);
     write (1, "\n", 1);
 }
