@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int	    is_power_of_2(unsigned int n)
 {
     int number = 1;
@@ -12,6 +10,7 @@ int	    is_power_of_2(unsigned int n)
     return (0);
 }
 /* 
+#include <stdio.h>
 int main()
 {
     printf("%d", is_power_of_2(4));

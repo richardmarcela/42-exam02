@@ -1,6 +1,4 @@
 #include <stddef.h>
-#include <stdio.h>
-#include <string.h>
 
 size_t	ft_strspn(const char *s, const char *accept)
 {
@@ -20,10 +18,12 @@ size_t	ft_strspn(const char *s, const char *accept)
     return (i);
 }
 
+/* #include <stdio.h>
+#include <string.h>
 int main()
 {
-    const char *s = "barcela";
-    const char *accept = "barcela";
+    const char *s = "teste";
+    const char *accept = "tes";
     printf("%zu\n", ft_strspn(s, accept));
     printf("%zu", strspn(s, accept));
-}
+} */

@@ -1,6 +1,3 @@
-#include <stdio.h>
-// #include <string.h> para a função original
-
 int    ft_strcmp(char *s1, char *s2)
 {
     int i = 0;
@@ -9,7 +6,9 @@ int    ft_strcmp(char *s1, char *s2)
     return (s1[i] - s2[i]);
 }
 
-/* int main(void)
+/* #include <stdio.h>
+#include <string.h> para a função original
+int main(void)
 {
     char s1[] = " ";
     char s2[] = "   ";

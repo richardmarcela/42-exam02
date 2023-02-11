@@ -15,13 +15,14 @@ int main(int argc, char **argv)
     {
         for (int i = 1; i < argc; i++)
         {
-            for (int j = 0; argv[i][j]; j++)
+            char c;
+            for (int j = 0; (c = argv[i][j]); j++)
             {
-                if (argv[i][j] >= 'A' && argv[i][j] <= 'Z' && !is_space(argv[i][j + 1]))
-                    argv[i][j] += 32;
-                else if (argv[i][j] >= 'a' && argv[i][j] <= 'z' && is_space(argv[i][j + 1]))
-                    argv[i][j] -= 32;
-                write(1, &argv[i][j], 1);
+                if (c >= 'A' && c <= 'Z' && !is_space(argv[i][j + 1]))
+                    c += 32;
+                else if (c >= 'a' && c <= 'z' && is_space(argv[i][j + 1]))
+                    c -= 32;
+                write(1, &c, 1);
             }
             write(1, "\n", 1);
         }

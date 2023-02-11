@@ -14,10 +14,11 @@ int main(int argc, char **argv)
 	if (argc == 3)
 	{
 		int i = 0;
-		while (argv[1][i])
+		char c;
+		while ((c = argv[1][i]))
 		{
-			if (!iter(argv[1], argv[1][i], i) && iter(argv[2], argv[1][i], -1))
-				write(1, &argv[1][i], 1);
+			if (!iter(argv[1], c, i) && iter(argv[2], c, -1))
+				write(1, &c, 1);
 			i++;
 		}
 	}

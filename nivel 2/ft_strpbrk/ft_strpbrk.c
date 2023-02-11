@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 char	*ft_strpbrk(const char *s1, const char *s2)
 {
     int i = 0;
@@ -20,7 +18,8 @@ char	*ft_strpbrk(const char *s1, const char *s2)
     return (0);
 }
 
-/* int main()
+/* #include <stdio.h>
+int main()
 {
     printf("%s", ft_strpbrk("testeeeee", "aeiou"));
 } */

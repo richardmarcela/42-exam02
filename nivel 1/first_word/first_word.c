@@ -1,24 +1,17 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   first_word.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mrichard <mrichard@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/20 16:10:26 by mrichard          #+#    #+#             */
-/*   Updated: 2022/12/20 18:30:51 by mrichard         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
+
+int is_space(char c)
+{
+    return (c == ' ' || c == '\t' || c == '\0');
+}
 
 int main(int argc, char **argv)
 {
     if (argc == 2)
     {
-        while (*argv[1] && (*argv[1] == ' ' || *argv[1] == '\t' || *argv[1] == '\v'))
+        while (*argv[1] && is_space(*argv[1]))
             argv[1]++;
-        while (*argv[1] && (*argv[1] != ' ' && *argv[1] != '\t' && *argv[1] != '\v'))
+        while (*argv[1] && !is_space(*argv[1]))
             write(1, argv[1]++, 1);
     }
     write(1, "\n", 1);

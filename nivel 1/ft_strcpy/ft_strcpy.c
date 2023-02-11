@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 char    *ft_strcpy(char *s1, char *s2)
 {
     int i = 0;
@@ -12,9 +10,10 @@ char    *ft_strcpy(char *s1, char *s2)
     return(s1);
 }
 
-/* int main()
+/* #include <stdio.h>
+int main()
 {
-    char src[10] = "marcela";
+    char src[10] = "testeeeee";
     char dest[20] = "";
     ft_strcpy(dest, src);
     printf("%s", dest);

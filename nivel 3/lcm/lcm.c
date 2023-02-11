@@ -1,4 +1,3 @@
-
 unsigned int    lcm(unsigned int a, unsigned int b)
 {
     unsigned int i = 1;

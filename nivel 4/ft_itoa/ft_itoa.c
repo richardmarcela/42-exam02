@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 int num_digits(int nbr)
 {
@@ -39,7 +38,8 @@ char	*ft_itoa(int nbr)
     return (str);
 }
 
-/* int		main(void)
+/* #include <stdio.h>
+int		main(void)
 {
 	int number1 = 123456789;
 	int number2 = 1;

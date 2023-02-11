@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 int is_space(char c)
 {

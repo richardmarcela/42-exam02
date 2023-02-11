@@ -1,5 +1,3 @@
-/* #include <stdio.h>
-#include <string.h> */
 #include <stdlib.h>
 
 int ft_strlen(char *str)
@@ -19,7 +17,9 @@ char    *ft_strdup(char *src)
     return (dest);
 }
 
-/* int main(void)
+/* #include <stdio.h>
+#include <string.h>
+int main(void)
 {
     printf("Minha função:\n");
     char src[] = "teste";

@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 char    **ft_split(char *str)
 {
@@ -28,7 +27,8 @@ char    **ft_split(char *str)
     return (split);
 }
 
-/* int		main()
+/* #include <stdio.h>
+int		main()
 {
 	char	arr[] = "olol asdfgh xcfvgbhj fghj  dfghj           dfvgcdfvgbh";
 	char	**splitted;

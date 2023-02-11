@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int is_whitespace(char c)
 {
     // 9 - 13 = \t \n \v \f \r (o que é pego pela função isspace) 
@@ -71,7 +69,8 @@ int	ft_atoi_base(const char *str, int str_base)
     return (res * sign);
 }
 
+/* #include <stdio.h>
 int main()
 {
     printf("%d\n", ft_atoi_base("a", 16));
-}
+} */
